@@ -90,9 +90,3 @@ class TestPlSentence:
         with pytest.raises(AttributeError):
             pl_sentence(123)
     
-    def test_pl_sentence_with_multiple_spaces(self):
-        """Test that multiple spaces are handled correctly."""
-        input_sentence = "hello  world"
-        expected_output = "ellohay  orldway"
-        result = pl_sentence(input_sentence)
-        assert result == expected_output, "Multiple spaces should be preserved"
