@@ -14,11 +14,6 @@ def pl_sentence(text):
     for one_word in text.split():
         output.append(pl_word(one_word))
 
-    if text[0] in 'aeiou':
-        return text + 'way'
-    else:
-        return text[1:] + text[0] + 'ay'
+    return ' '.join(output)
 
-for one_word in ['computer', 'apple', 'papaya', 'elephant']:
-    print(f'{one_word}: {pl_word(one_word)}')
-    
+print(pl_sentence('this is a very interesting demo of chatbots'))
