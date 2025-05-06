@@ -2,7 +2,7 @@
 # Tests for the count_vowels function
 
 import pytest
-from vowel_counter import count_vowels
+from count_vowels import count_vowels
 
 def test_empty_string():
     """Test that an empty string returns zeros for all vowels."""
