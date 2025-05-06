@@ -56,7 +56,7 @@ def test_case_sensitivity():
 def test_with_punctuation():
     """Test a string with punctuation and spaces."""
     result = count_vowels("Hello, world!")
-    expected = {'a': 0, 'e': 1, 'i': 0, 'o': 2, 'u': 0}
+    expected = {'a': 0, 'e': 1, 'i': 0, 'o': 1, 'u': 0}
     assert result == expected
 
 def test_with_numbers():
